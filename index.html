@@ -1,97 +1,119 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>Fukky Portfolio</title>
-  <style>
+<meta charset="UTF-8" />
+<title>Fukky Portfolio</title>
+<style>
+    /* 背景アニメーション用 */
     body {
-      font-family: "Helvetica Neue", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      font-family: "Helvetica Neue", sans-serif;
       color: #333;
+      background: linear-gradient(-45deg, #f0f8ff, #e0f7fa, #ffe0f0, #fffde7);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
     }
-
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
     header {
       text-align: center;
       padding: 100px 20px 40px;
+      animation: fadeIn 2s ease-out;
     }
-
     header h1 {
       font-size: 40px;
       margin-bottom: 10px;
     }
-
     header p {
       font-size: 18px;
       color: #555;
     }
-
     section {
       max-width: 700px;
       margin: 0 auto;
       padding: 40px 20px;
       border-top: 1px solid #ddd;
+      animation: fadeInUp 1.5s ease-out;
     }
-
     h2 {
       font-size: 24px;
       margin-bottom: 15px;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
     }
-
     ul {
       padding-left: 20px;
     }
-
     a {
       color: #007acc;
       text-decoration: none;
+      transition: color 0.3s;
     }
-
     a:hover {
       text-decoration: underline;
+      color: #005f99;
     }
-
     footer {
       text-align: center;
       font-size: 14px;
       color: #aaa;
       padding: 40px 0;
       border-top: 1px solid #eee;
+      animation: fadeIn 2s ease-out;
     }
-  </style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+</style>
 </head>
 <body>
-
-  <header>
-    <h1>Fukky Portfolio</h1>
-    <p>ゲームが趣味の開発者見習い</p>
-  </header>
-
-  <section>
-    <h2>About</h2>
-    <p>こんにちは、ふっきーです。ゲームが好きで、HTMLやCSS、JavaScriptを勉強しています。将来的には自分のゲームを作るのが夢です。</p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript（勉強中）</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Works</h2>
-    <p><a href="https://fukkinn2.onrender.com" target="_blank">自己紹介サイト</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Fukky
-  </footer>
-
+<header>
+<h1>Fukky Portfolio</h1>
+<p>ゲームが趣味の開発者見習い</p>
+</header>
+<section>
+<h2>About</h2>
+<p>こんにちは、ふっきーです。ゲームが好きで、HTMLやCSS、JavaScriptを勉強しています。将来的には自分のゲームを作るのが夢です。</p>
+</section>
+<section>
+<h2>Skills</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript（勉強中）</li>
+</ul>
+</section>
+<section>
+<h2>Works</h2>
+<p><a href="https://fukkinn2.onrender.com" target="_blank">自己紹介サイト</a></p>
+</section>
+<footer>
+&copy; 2025 Fukky
+</footer>
 </body>
 </html>
