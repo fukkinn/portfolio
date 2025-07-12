@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>ふっきーのポートフォリオ</title>
+  <meta charset="UTF-8" />
+  <title>Fukky Portfolio</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #eef;
-      padding: 20px;
-    }
-    h1 {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
       color: #333;
     }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+    }
+
     section {
-      margin-bottom: 20px;
-      background: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      border-top: 1px solid #ddd;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      padding: 40px 0;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
-  <h1>ふっきーのポートフォリオ</h1>
+
+  <header>
+    <h1>Fukky Portfolio</h1>
+    <p>ゲームが趣味の開発者見習い</p>
+  </header>
 
   <section>
-    <h2>📌 スキル</h2>
+    <h2>About</h2>
+    <p>こんにちは、ふっきーです。ゲームが好きで、HTMLやCSS、JavaScriptを勉強しています。将来的には自分のゲームを作るのが夢です。</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -34,9 +85,13 @@
   </section>
 
   <section>
-    <h2>🎮 制作物</h2>
-    <p><a href="https://fukkinn2.onrender.com">自己紹介サイト</a></p>
+    <h2>Works</h2>
+    <p><a href="https://fukkinn2.onrender.com" target="_blank">自己紹介サイト</a></p>
   </section>
+
+  <footer>
+    &copy; 2025 Fukky
+  </footer>
+
 </body>
 </html>
-
